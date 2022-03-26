@@ -1,8 +1,9 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import icon from '../../assets/icon.svg';
 import './App.css';
+import Login from './LoginPage';
 
-const Hello = () => {
+const MainPage = () => {
   return (
     <div>
       <div className="Hello">
@@ -43,7 +44,8 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Hello />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<MainPage />} />
       </Routes>
     </Router>
   );
